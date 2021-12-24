@@ -1,0 +1,10 @@
+pipeline {
+  agent any
+  stages {
+    stage ('Molecule test') {
+      steps {
+        molecule test
+      }
+    }
+  }
+}
